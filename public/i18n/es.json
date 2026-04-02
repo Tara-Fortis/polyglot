@@ -1,0 +1,25 @@
+{
+  "app": {
+    "title": "Aplicación Políglota",
+    "description": "Una aplicación Angular multilingüe simple"
+  },
+  "navBar": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "contact": "Contacto"
+  },
+  "messages": {
+    "welcome": "¡Bienvenido {{name}} a la Aplicación Políglota!"
+  },
+  "locale": {
+    "label": "Idioma"
+  },
+  "about": {
+    "title": "Acerca de esta aplicación",
+    "body": "Este proyecto es una demostración sencilla de cómo agregar soporte multilingüe a una aplicación Angular utilizando Transloco. Muestra cómo organizar, traducir y cambiar texto en tiempo real para crear una experiencia más inclusiva."
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "body": "Si tienes preguntas sobre este proyecto o deseas aprender más sobre la internacionalización en Angular, no dudes en comunicarte. Esta página también demuestra cómo traducir contenido estático en varios idiomas."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "app": {
+    "title": "Polyglot App",
+    "description": "A simple multilingual Angular application"
+  },
+  "navBar": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "messages": {
+    "welcome": "Welcome {{name}} to the Polyglot App!"
+  },
+  "locale": {
+    "label": "Language"
+  },
+  "about": {
+    "title": "About This App",
+    "body": "This project is a simple demonstration of how to add multilingual support to an Angular application using Transloco. It shows how text can be organized, translated, and switched at runtime to create a more inclusive user experience."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "body": "If you have questions about this project or want to learn more about internationalization in Angular, feel free to reach out. This page is here to show how static content can also be translated across multiple languages."
+  }
+}
