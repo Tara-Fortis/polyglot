@@ -1,59 +1,92 @@
-# Polyglot
+# Angular Tutorial
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.4.
+## Introduction to l18n (Internationalization)
 
-## Development server
 
-To start a local development server, run:
+1. Download and unzip the [starter project]()
 
-```bash
-ng serve
-```
+2. Open it in VS Code
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+3. Open the **Terminal** and Move Into the Project Directory
 
-## Code scaffolding
+````
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+cd <your-project-name>
 
-```bash
-ng generate component component-name
-```
+````
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+4. Install **Transloco** into your angular project
 
-```bash
-ng generate --help
-```
 
-## Building
+````
 
-To build the project run:
+ng add @jsverse/transloco
 
-```bash
-ng build
-```
+````
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
+### Configuration options
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+> Which languages do you need? en, es, fr
+>
+> Are you working with server side rendering? No
 
-```bash
-ng test
-```
 
-## Running end-to-end tests
+#### Changed Files
 
-For end-to-end (e2e) testing, run:
+> transloco.config.js
+>
+> transloco-root.ts
+>
+> new provider in app.config.ts
+> 
+> public/i18n folder
 
-```bash
-ng e2e
-```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+5. Download and add Translation files
 
-## Additional Resources
+> assets/i18n/en.json
+>
+> assets/i18n/fr.json
+> 
+> assets/i18n/es.json
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+6. Add the Language Switching Logic
+
+    In **nav.ts** add the folllowing code:
+
+
+````
+// tells transloco what file to load
+switchLang(lang: string) {
+    his.translocoService.setActiveLang(lang);
+}
+````
+
+Replace Text with Translation Keys
+
+nav.html
+
+
+
+Add TranslocoModule
+
+about.ts and contact.ts
+
+
+
+Walk Through First Example Together
+
+about.html
+
+````
+	<div *transloco="let t">
+	 <h2>{{ t('about.title') }}</h2>
+	 <p>{{ t('about.body') }}</p>
+	</div>
+````
+
+Students try on their own in contact.ts
+
