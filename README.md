@@ -29,7 +29,7 @@ ng add @jsverse/transloco
 
 > Which languages do you need? en, es, fr
 >
-> Are you working with server side rendering? No
+> Are you working with server side rendering? N
 
 
 #### Changed Files
