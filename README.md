@@ -127,12 +127,14 @@ JSON stores data in **key-value pairs**. Transloco looks for a "key" and replace
 
 4. **Wrap content in HTML:** In your component HTML files, wrap the content using the `*transloco` structural directive
 
-````html
+{% raw %}
+```html
     <ng-container *transloco="let t">
         <h1>{{ t('app.title') }}</h1>
         <p>{{ t('messages.welcome', { name: 'Student' }) }}</p>
     </ng-container>
-````
+```
+{% endraw %}
 
 5. **Nav Bar Switcher:** Update `nav.component.ts` with logic to change the active language using the `TranslocoService` and a function to change the language:
 
