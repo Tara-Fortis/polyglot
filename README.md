@@ -150,49 +150,9 @@ import { TranslocoService, TranslocoModule } from '@jsverse/transloco';
 export class NavComponent {
   constructor(private service: TranslocoService) {}
 
-<<<<<<< HEAD
   changeLanguage(lang: string) {
     this.service.setActiveLang(lang);
   }
-=======
-### Configuration options
-
-> Which languages do you need? en, es, fr
->
-> Are you working with server side rendering? N
-
-
-#### Changed Files
-
-> transloco.config.js
->
-> transloco-root.ts
->
-> new provider in app.config.ts
-> 
-> public/i18n folder
-
-
-5. Download and add Translation files
-
-> assets/i18n/en.json
->
-> assets/i18n/fr.json
-> 
-> assets/i18n/es.json
-
-
-
-6. Add the Language Switching Logic
-
-    In **nav.ts** add the folllowing code:
-
-
-````
-// tells transloco what file to load
-switchLang(lang: string) {
-    his.translocoService.setActiveLang(lang);
->>>>>>> 0e7f44743439d3b3a058a677890714ab4fdbbf98
 }
 ````
 
